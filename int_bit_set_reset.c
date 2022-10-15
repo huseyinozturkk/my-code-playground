@@ -8,6 +8,7 @@ void printBits(size_t const size, void const * const ptr);
 int main()
 {
     uint8_t my = 0;
+    
     setBit(&my, 2);
     setBit(&my, 7);
     resetBit(&my, 2);
