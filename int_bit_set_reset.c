@@ -13,6 +13,32 @@ int main()
     setBit(&my, 7);
     resetBit(&my, 2);
     resetBit(&my, 7);
+	
+	// data[2] de bizim bitlerini set - reset etmek istediğimiz verinin olduğunu varsayalım.
+    uint8_t data[3];
+    
+    data[0] = 0;
+    data[1] = 0;
+    data[2] = 0;
+    
+    setBit((data + 2), 0); // 0.biti 1 yap
+    setBit((data + 2), 2);
+    setBit((data + 2), 4);
+    setBit((data + 2), 6);
+    
+    printBits(sizeof(uint8_t), data + 2);
+    
+    setBit((data + 2), 1); // 1.biti 1 yap
+    setBit((data + 2), 3);
+    setBit((data + 2), 5);
+    setBit((data + 2), 7);
+    
+    resetBit((data + 2), 0);
+    resetBit((data + 2), 2);
+    resetBit((data + 2), 4);
+    resetBit((data + 2), 6);
+    
+    printBits(sizeof(uint8_t), data + 2);
     
 
     return 0;
