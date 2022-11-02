@@ -1,0 +1,3 @@
+C:/Users/huseyino/Desktop/cmake-tutorial/01-basic/build/CMakeFiles/basic.dir
+C:/Users/huseyino/Desktop/cmake-tutorial/01-basic/build/CMakeFiles/edit_cache.dir
+C:/Users/huseyino/Desktop/cmake-tutorial/01-basic/build/CMakeFiles/rebuild_cache.dir

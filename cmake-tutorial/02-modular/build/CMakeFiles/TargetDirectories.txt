@@ -1,0 +1,3 @@
+C:/Users/huseyino/Desktop/cmake-tutorial/02-modular/build/CMakeFiles/modular.dir
+C:/Users/huseyino/Desktop/cmake-tutorial/02-modular/build/CMakeFiles/edit_cache.dir
+C:/Users/huseyino/Desktop/cmake-tutorial/02-modular/build/CMakeFiles/rebuild_cache.dir
