@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "task_manager.h": "c",
+        "stdio.h": "c",
+        "task_config.h": "c"
+    }
+}
