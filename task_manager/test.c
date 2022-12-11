@@ -1,43 +1,42 @@
-#include "task_manager.h"
 #include "stdio.h"
+#include "task_manager.h"
+#include "task_manager_config.h"
 
-void print_priority_group_list(task_manager_t *manager);
+void test_handler0(void){printf("TEST HANDLER0\r\n");}
+void test_handler1(void){printf("TEST HANDLER1\r\n");}
+void test_handler2(void){printf("TEST HANDLER2\r\n");}
+void test_handler3(void){printf("TEST HANDLER3\r\n");}
+void test_handler4(void){printf("TEST HANDLER4\r\n");}
 
 int main(int argc, char const *argv[])
 {
-    printf("Task manager test...\r\n");   
+    printf("TASK MANAGER TEST\r\n");
 
-    task_manager_t my_manager;
-    task_manager_init(&my_manager);
-    printf("task_manager_inited first node with id :%d\r\n", my_manager.priority_head->priority_id);
+    initTaskManager();
     
-    print_priority_group_list(&my_manager);
-
-    priority_group_add(&my_manager);
-    priority_group_add(&my_manager);
-    priority_group_add(&my_manager);
-    priority_group_add(&my_manager);
-
-    print_priority_group_list(&my_manager);
-
-    
-    return 0;
-}
-
-void print_priority_group_list(task_manager_t *manager)
-{
-    printf("printing priority group list ...\r\n");
-
-    priority_t *curr_priority = manager->priority_head;
-    while (curr_priority != NULL)
+    for (int i = 0; i < (MAX_PRIORITY + 5); i++)
     {
-        printf("current priority id : %d\r\n", curr_priority->priority_id);
-        curr_priority = curr_priority->priority_next;
-
+        printf("TEST - addPriorityGroup ret : %d\r\n",addPriorityGroups());
     }
-}
+    
+    printTaskManagerStatus();
+    
+    addTask(2, 1, test_handler0);
+    addTask(2, 3, test_handler1);
+    addTask(2, 4, test_handler2);
+    addTask(2, 5, test_handler3);
+    addTask(4, 12, test_handler4);
+    addTask(4, 12, test_handler0);
 
-void print_priority_group_and_task(task_manager_t *manager)
-{
+    printTaskManagerStatus();
+    
+    removeTask(2, 1);
+    removeTask(2, 0);
+    removeTask(2, 9);
 
+    printTaskManagerStatus();
+
+    taskController();
+
+    return 0;
 }

@@ -1,3 +1,1 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\task_manager.dir/objects.a
-C:\PROGRA~1\mingw64\bin\ar.exe qc CMakeFiles\task_manager.dir/objects.a @CMakeFiles\task_manager.dir\objects1
-C:\PROGRA~1\mingw64\bin\gcc.exe -Wl,--whole-archive CMakeFiles\task_manager.dir/objects.a -Wl,--no-whole-archive -o task_manager.exe -Wl,--out-implib,libtask_manager.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\task_manager.dir\linkLibs.rsp
+/usr/bin/clang -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/task_manager.dir/src/task_manager.c.o CMakeFiles/task_manager.dir/test.c.o -o task_manager 

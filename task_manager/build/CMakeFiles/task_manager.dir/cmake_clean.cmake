@@ -1,11 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/task_manager.dir/src/task_manager.c.obj"
-  "CMakeFiles/task_manager.dir/src/task_manager.c.obj.d"
-  "CMakeFiles/task_manager.dir/test.c.obj"
-  "CMakeFiles/task_manager.dir/test.c.obj.d"
-  "libtask_manager.dll.a"
-  "task_manager.exe"
-  "task_manager.exe.manifest"
+  "CMakeFiles/task_manager.dir/src/task_manager.c.o"
+  "CMakeFiles/task_manager.dir/src/task_manager.c.o.d"
+  "CMakeFiles/task_manager.dir/test.c.o"
+  "CMakeFiles/task_manager.dir/test.c.o.d"
+  "task_manager"
   "task_manager.pdb"
 )
 

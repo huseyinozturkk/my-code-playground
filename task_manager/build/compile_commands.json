@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/blue/Desktop/task_manager/build",
+  "command": "/usr/bin/clang  -I/Users/blue/Desktop/task_manager/task_manager -I/Users/blue/Desktop/task_manager/inc -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/task_manager.dir/src/task_manager.c.o -c /Users/blue/Desktop/task_manager/src/task_manager.c",
+  "file": "/Users/blue/Desktop/task_manager/src/task_manager.c"
+},
+{
+  "directory": "/Users/blue/Desktop/task_manager/build",
+  "command": "/usr/bin/clang  -I/Users/blue/Desktop/task_manager/task_manager -I/Users/blue/Desktop/task_manager/inc -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -o CMakeFiles/task_manager.dir/test.c.o -c /Users/blue/Desktop/task_manager/test.c",
+  "file": "/Users/blue/Desktop/task_manager/test.c"
+}
+]

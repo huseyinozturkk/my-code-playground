@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/blue/Desktop/task_manager/src/task_manager.c" "CMakeFiles/task_manager.dir/src/task_manager.c.obj" "gcc" "CMakeFiles/task_manager.dir/src/task_manager.c.obj.d"
-  "C:/Users/blue/Desktop/task_manager/test.c" "CMakeFiles/task_manager.dir/test.c.obj" "gcc" "CMakeFiles/task_manager.dir/test.c.obj.d"
+  "/Users/blue/Desktop/task_manager/src/task_manager.c" "CMakeFiles/task_manager.dir/src/task_manager.c.o" "gcc" "CMakeFiles/task_manager.dir/src/task_manager.c.o.d"
+  "/Users/blue/Desktop/task_manager/test.c" "CMakeFiles/task_manager.dir/test.c.o" "gcc" "CMakeFiles/task_manager.dir/test.c.o.d"
   )
 
 # Targets to which this target links.

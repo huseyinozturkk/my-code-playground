@@ -1,12 +1,13 @@
-cmake_minimum_required(VERSION 3.10)
+PROJECT(task_manager C)
 
-project(task_manager)
+cmake_minimum_required(VERSION 3.1)
 
-include_directories(task_manager 
+include_directories(task_manager
     inc/
-    )
-
-add_executable(task_manager 
-    test.c
+)  
+add_executable(task_manager
     src/task_manager.c
-    )
+
+    test.c
+) 
+
