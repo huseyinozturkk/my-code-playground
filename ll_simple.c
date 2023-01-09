@@ -41,13 +41,19 @@ void
 print_list(node_t *head) 
 {
     printf("printing list:\r\n");
-    
+	
+    /*
     // Walking through in list to the end and print each list element's val.
     node_t *curr = head;
     while (curr != NULL) 
     {
         printf("%d\r\n", curr->val);
         curr = curr->next;
+    }
+    */
+
+    for (node_t *curr = head; curr != NULL; curr = curr->next){
+        printf("%d\r\n", curr->val);
     }
 }
 
